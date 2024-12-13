@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/iconelogo.avif" alt="" />
+            evilkermit</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Tokenomics</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Roadmap</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Pre-Sale</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <button class="btn btn-outline-success" type="submit">
+            Contact Us
+            <span>
+              <img src="images/arrow.svg" alt="" />
+            </span>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!--home section   -->
+    <section class="home">
+      <div class="container">
+        <div class="row justify-content-between align-items-start">
+          <div class="col-xl-12 col-lg-12 text-center">
+            <img src="images/iconelogo.avif" alt="" />
+          </div>
+
+          <div class="col-xl-7 col-lg-7 col-sm-12 mt-5">
+            <h1>evilkermit</h1>
+            <p>embrace your inner evil , invest in evilkermit.</p>
+          </div>
+          <div class="col-xl-5 col-lg-5 col-sm-12">
+            <div class="item">
+              <div class="card text-center text-white">
+                <div class="card-header">Token Sale Open - Buy TOKEN Now</div>
+                <div class="card-body">
+                  <div
+                    class="d-flex justify-content-center align-items-center mb-4"
+                  >
+                    <div class="time-box me-3">
+                      <h2 class="display-5 fw-bold">18</h2>
+                      <p class="mb-0">DAYS</p>
+                    </div>
+                    <span class="fs-4 fw-bold">:</span>
+                    <div class="time-box mx-3">
+                      <h2 class="display-5 fw-bold">12</h2>
+                      <p class="mb-0">HOURS</p>
+                    </div>
+                    <span class="fs-4 fw-bold">:</span>
+                    <div class="time-box mx-3">
+                      <h2 class="display-5 fw-bold">57</h2>
+                      <p class="mb-0">MINUTES</p>
+                    </div>
+                    <span class="fs-4 fw-bold">:</span>
+                    <div class="time-box ms-3">
+                      <h2 class="display-5 fw-bold">36</h2>
+                      <p class="mb-0">SECONDS</p>
+                    </div>
+                  </div>
+                  <p>Until token sale ends</p>
+                  <p class="text-success">USDT Raised: 0/530000000</p>
+                  <p>Your Purchased TOKEN = 0</p>
+
+                  <p class="pra_Line">1 TOKEN = $0.0005</p>
+
+                  <div class="btn-group mb-3" role="group">
+                    <button type="button" width="100%" class="btn btn-green">
+                      <span>
+                        <img src="images/Ethereum-ETH-icon.png" alt="" />
+                      </span>
+                      ETH
+                    </button>
+                    <button type="button" width="100%" class="btn btn-dark">
+                      <span>
+                        <img src="images/Tether-USDT-icon.png" alt="" />
+                      </span>
+                      USDT
+                    </button>
+                  </div>
+                  <p class="pra_Line">ETH Balance: 0 ETH</p>
+
+                  <div class="mb-3 text-start">
+                    <div class="row">
+                      <div class="col-6">
+                        <label for="payWithEth" class="form-label"
+                          >Pay with ETH</label
+                        >
+                        <input
+                          type="number"
+                          class="form-control bg-dark text-white border-success"
+                          id="payWithEth"
+                          placeholder="0"
+                        />
+                      </div>
+                      <div class="col-6">
+                        <label for="receiveToken" class="form-label"
+                          >Receive TOKEN</label
+                        >
+                        <input
+                          type="number"
+                          class="form-control bg-dark text-white border-success"
+                          id="receiveToken"
+                          placeholder="0"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <article>
+                    0 ETH is reserved for gas fees. The actual amount used will
+                    depend on the network activity at the time.
+                  </article>
+
+                  <div class="progress text-center mb-3" style="height: 20px">
+                    <div
+                      class="progress-bar bg-success text-center"
+                      role="progressbar"
+                      style="width: 10%"
+                      aria-valuenow="10"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                    <p>100,000,000 / 1,000,000,000 EVLK</p>
+                  </div>
+
+                  <button class="btn btn-success btn-lg w-100">
+                    Connect Wallet
+                  </button>
+                </div>
+                <div class="card-footer text-center">
+                  Embrace Your Inner Evil.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- discover section  -->
+    <section class="discover mt-150">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 col-xl-9">
+            <h2>Discover Our full range of services</h2>
+            <p>
+              LandFree offers adiverse array of expertly crafted services ,
+              seamlessly merging creativity and technology to deliver that
+              exceed expectations.
+            </p>
+          </div>
+          <div class="col-xl-4 col-lg-4">
+            <div class="card">
+              <div class="top-card d-flex">
+                <span> ???</span>
+                <h3>Design Services</h3>
+              </div>
+              <p>
+                At LandFree ,our design team is passionate about creating
+                stunning
+              </p>
+              <hr />
+              <div class="btns">
+                <button>UI & UX Design</button>
+                <button>Graphic Design</button>
+                <button>Branding</button>
+                <button>Web Design</button>
+                <button>Carousel Design</button>
+              </div>
+              <hr />
+              <button class="btn">
+                Book a Call
+                <img src="images/arrow.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4">
+            <div class="card">
+              <div class="top-card d-flex">
+                <span> ???</span>
+                <h3>Design Services</h3>
+              </div>
+              <p>
+                At LandFree ,our design team is passionate about creating
+                stunning
+              </p>
+              <hr />
+              <div class="btns">
+                <button>UI & UX Design</button>
+                <button>Graphic Design</button>
+                <button>Branding</button>
+                <button>Web Design</button>
+                <button>Carousel Design</button>
+              </div>
+              <hr />
+              <button class="btn">
+                Book a Call
+                <img src="images/arrow.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4">
+            <div class="card">
+              <div class="top-card d-flex">
+                <span> ???</span>
+                <h3>Design Services</h3>
+              </div>
+              <p>
+                At LandFree ,our design team is passionate about creating
+                stunning
+              </p>
+              <hr />
+              <div class="btns">
+                <button>UI & UX Design</button>
+                <button>Graphic Design</button>
+                <button>Branding</button>
+                <button>Web Design</button>
+                <button>Carousel Design</button>
+              </div>
+              <hr />
+              <button class="btn">
+                Book a Call
+                <img src="images/arrow.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- features Sections  -->
+    <section class="discover mt-150 feature">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-xl-6">
+            <span>OUR FEATURES</span>
+            <h2>What Sets LandFree Apart</h2>
+            <p>
+              Explore the exceptional features that make landfree your ultimate
+              web development choice
+            </p>
+          </div>
+          <div class="col-lg-6 col-xl-6">
+            <div class="card">
+              <h4>BUY IN SALE:1$EVLK=$0.0027 ETH USDT</h4>
+            </div>
+            <p>
+              Stand out in the digital landscap with a profissionally crafted
+              website that captivates and engages your audiencs effectively.
+            </p>
+          </div>
+          <div class="col-lg-6 col-xl-6">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="card-feature card">
+                  <div class="d-flex">
+                    <span>??</span>
+                    <p>responsive and Mobile - First Design</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card-feature card">
+                  <div class="d-flex">
+                    <span>??</span>
+                    <p>responsive and Mobile - First Design</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card-feature card">
+                  <div class="d-flex">
+                    <span>??</span>
+                    <p>responsive and Mobile - First Design</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card-feature card">
+                  <div class="d-flex">
+                    <span>??</span>
+                    <p>responsive and Mobile - First Design</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-around">
+            <div class="col-lg-10">
+              <h5>We Promise you . your every single penny will worth</h5>
+            </div>
+            <div class="col-lg-2">
+              <button>
+                Contact Us
+                <img src="images/arrow.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- different sections -->
+    <section class="different discover mt-150 feature">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-xl-6">
+            <div class="card">
+              <img src="images/bgcellsdown.svg" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-6 col-xl-6">
+            <h2>What Sets LandFree Apart</h2>
+            <p>
+              Explore the exceptional features that make landfree your ultimate
+              web development choice
+            </p>
+            <button>
+              Contact Us
+              <img src="images/arrow.svg" alt="" />
+            </button>
+            <button class="viewBTN">
+              View Projects <img src="images/arrow.svg" alt="" />
+            </button>
+            <div class="row mt-2">
+              <div class="col-lg-6">
+                <div class="card-feature card">
+                  <div class="d-flex">
+                    <span>??</span>
+                    <p>responsive and Mobile - First Design</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card-feature card">
+                  <div class="d-flex">
+                    <span>??</span>
+                    <p>responsive and Mobile - First Design</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card-feature card">
+                  <div class="d-flex">
+                    <span>??</span>
+                    <p>responsive and Mobile - First Design</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card-feature card">
+                  <div class="d-flex">
+                    <span>??</span>
+                    <p>responsive and Mobile - First Design</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Advantages Section -->
+    <section class="Advantages different discover mt-150 feature">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-xl-12">
+            <h2>What Sets LandFree Apart</h2>
+            <p>
+              Explore the exceptional features that make landfree your ultimate
+              web development choice
+            </p>
+
+            <div class="row mt-2">
+              <div class="col-lg-4">
+                <div class="card-feature card">
+                  <h4>higher Conversion Rates</h4>
+                  <p>responsive and Mobile - First Design</p>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card-feature card">
+                  <h4>higher Conversion Rates</h4>
+                  <p>responsive and Mobile - First Design</p>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card-feature card">
+                  <h4>higher Conversion Rates</h4>
+                  <p>responsive and Mobile - First Design</p>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card-feature card">
+                  <h4>higher Conversion Rates</h4>
+                  <p>responsive and Mobile - First Design</p>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card-feature card">
+                  <h4>higher Conversion Rates</h4>
+                  <p>responsive and Mobile - First Design</p>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card-feature card">
+                  <h4>higher Conversion Rates</h4>
+                  <p>responsive and Mobile - First Design</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Identity Section -->
+    <section class="identity different discover mt-150 feature">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-xl-6">
+            <div class="card">
+              <img src="images/bgcellsdown.svg" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-6 col-xl-6">
+            <h2>What Sets LandFree Apart</h2>
+            <p>
+              Explore the exceptional features that make landfree your ultimate
+              web development choice
+            </p>
+            <button>
+              Contact Us
+              <img src="images/arrow.svg" alt="" />
+            </button>
+            <button class="viewBTN">
+              View Projects <img src="images/arrow.svg" alt="" />
+            </button>
+            <h5>Our Clients</h5>
+            <div class="row mt-2 bg-dark br-5">
+              <div class="col-lg-2">
+                <p>Stellier</p>
+              </div>
+              <div class="col-lg-2">
+                <p>Stellier</p>
+              </div>
+              <div class="col-lg-2">
+                <p>Stellier</p>
+              </div>
+              <div class="col-lg-2">
+                <p>Stellier</p>
+              </div>
+              <div class="col-lg-2">
+                <p>Stellier</p>
+              </div>
+              <div class="col-lg-2">
+                <p>Stellier</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="row footer mt-150 justify-content-evenly align-items-center"
+        >
+          <div class="col-lg-2">
+            <div class="card">
+              <h2>2024</h2>
+              <p>your Founded</p>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="card">
+              <h2>500+</h2>
+              <p>your Founded</p>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="card">
+              <h2>60+</h2>
+              <p>your Founded</p>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="card">
+              <h2>2024</h2>
+              <p>your Founded</p>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="card">
+              <h2>2024</h2>
+              <p>your Founded</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- js files  -->
+    <script src="js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

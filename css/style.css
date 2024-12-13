@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #000;
+}
+img {
+  width: 100%;
+}
+/* header style  */
+header {
+  position: absolute;
+  z-index: 11;
+  inset: 0;
+}
+nav {
+  background-color: transparent;
+  padding: 20px;
+}
+.navbar-collapse {
+  flex-grow: unset;
+}
+.navbar-nav {
+  justify-content: center;
+  flex-grow: 1;
+}
+nav ul li {
+  padding: 10px;
+}
+nav ul li a {
+  color: white !important;
+}
+nav .collapse {
+  background-color: rgb(0, 0, 0);
+  margin-right: 80px;
+  border-radius: 80px !important;
+
+  --tw-shadow-colored: 0 0 20px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+nav .navbar-brand img {
+  padding-right: 10px;
+  width: 53px;
+}
+nav .navbar-brand {
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+nav button span img {
+  width: 15px;
+
+  background-color: rgba(0, 0, 0, 0.699);
+  border-radius: 50px;
+}
+nav button span {
+  padding: 5px;
+}
+nav button {
+  background-color: rgb(34 197 94 / 1) !important;
+  color: white !important;
+  border-radius: 40px !important;
+}
+/* home style section  */
+.home {
+  width: 100%;
+  height: 130vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  background-image: url(../images/bg.svg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  font-family: tagsFont;
+}
+.home .row img {
+  width: 100px;
+  margin-top: 120px;
+  border-radius: 50px;
+  box-shadow: 0 0 10px 5px #00ff0029, 0 0 20px 10px #00ff004f,
+    0 0 30px 15px #00ff0027, 0 0 50px 25px rgba(0, 255, 0, 0.272); /* Faded green */
+}
+.mt-150 {
+  margin-top: 150px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: tagsFont;
+}
+@font-face {
+  font-family: tagsFont;
+  src: url("../fonts/SpaceGrotesk-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: countFont;
+  src: url("../fonts/Stinky\ Slime.woff2");
+}
+.home h1 {
+  font-size: 70px;
+  text-transform: uppercase;
+  color: white;
+}
+.home p {
+  text-transform: capitalize;
+  color: white;
+}
+/* form style  */
+@media screen and (max-width: 768px) {
+  .home {
+    height: 200vh !important; /* Example height for mobile */
+  }
+}
+.home .item {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+.card-header {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: #38e438;
+  color: #000;
+  margin: 5px 0;
+}
+
+.time-box h2 {
+  color: #fff !important;
+  margin-bottom: 0;
+  background-color: #000;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 20px;
+  font-family: countFont;
+}
+
+.time-box p {
+  font-size: 12px;
+  color: white;
+}
+
+.form-control {
+  border: 2px solid #0bff0b !important;
+}
+
+.progress-bar {
+  font-size: 12px;
+  border-radius: 0 10px 10px 0;
+  line-height: 20px;
+}
+.progress {
+  border-radius: 20px;
+  color: black;
+  text-align: center !important;
+}
+.progress p {
+  color: rgb(125, 121, 121) !important;
+  text-align: center !important;
+  margin-left: 80px;
+}
+.home .item img {
+  width: 30px;
+  margin-right: 10px !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+}
+.home .item .card {
+  background: linear-gradient(to bottom, #015701, #000);
+}
+.pra_Line {
+  /* display: block; */
+  position: relative;
+  font-size: 20px;
+  margin: 20px 0;
+  font-size: 14px;
+  color: #000 !important;
+}
+
+.pra_Line::before,
+.pra_Line::after {
+  content: "";
+  position: absolute;
+  z-index: 55555;
+  inset: 0;
+  top: 50%;
+  width: 30%;
+  height: 1px;
+  background: black;
+}
+
+.pra_Line::before {
+  left: 70% !important;
+}
+.home .item .card-body .btn {
+  width: 220px;
+  margin: 10px;
+  background-color: #000;
+  border: 1px solid #0bff0b;
+  border-radius: 3px;
+  color: #13f113;
+}
+.home .item .card-body .btn-green {
+  background-color: #0bff0b;
+  color: #000;
+}
+.home .item article {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.card-footer::after {
+  content: "Invest in EvilKermit.";
+  color: #0bff0b;
+}
+/* discover section style  */
+.discover .card {
+  background-color: #1b1c1b4f !important;
+  color: #fff;
+  padding: 15px;
+}
+
+.discover h2 {
+  color: #e4ff17;
+  font-weight: 800;
+  font-size: 45px;
+}
+.discover h3 {
+  padding: 5px;
+  color: #e4ff17;
+}
+.discover p {
+  color: #fff !important;
+  padding: 10px;
+}
+.discover .btns button {
+  color: #fff;
+  padding: 12px;
+  margin: 7px;
+  border-radius: 5px;
+  background-color: #1b1c1b4f;
+  border: none;
+}
+.discover .btn img {
+  width: 30px;
+  background-color: #000;
+  border-radius: 50px;
+}
+.discover .btn {
+  color: #fff;
+  background-color: #1b1c1b4f;
+  color: #e4ff17;
+  border-radius: 30px;
+}
+/* feature style  */
+.feature span {
+  color: #e4ff17;
+}
+.feature .card {
+  border-left: 3px solid #e4ff17;
+}
+.feature .card-feature {
+  border: none;
+  margin: 10px;
+}
+.feature .card-feature span {
+  padding: 20px;
+  font-size: 20px;
+}
+.feature h5 {
+  color: #fff;
+  font-size: 18px;
+  margin-top: 25px;
+}
+.feature button {
+  background-color: #e4ff17;
+  color: #000 !important;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 30px;
+}
+.feature button img {
+  width: 20px;
+  padding: 5px;
+  background-color: #000;
+  border-radius: 50px;
+}
+.different button {
+  border-radius: 30px !important;
+  font-size: 14px !important;
+}
+.different .viewBTN {
+  background-color: #1b1c1b4f;
+  color: #e4ff17 !important;
+}
+.Advantages h4 {
+  border-left: 2px solid #e4ff17;
+  padding-left: 20px;
+}
+.Advantages p {
+  color: rgba(255, 255, 255, 0.63) !important;
+}
+.identity .row {
+  border-radius: 10px;
+}
+.footer .card {
+  border: none;
+  text-align: center;
+  border-radius: 10px;
+}
+.footer .card h2 {
+  color: #fff;
+}
