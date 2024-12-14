@@ -44,18 +44,18 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#"
+                  >Pre-Sale</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
                   >Tokenomics</a
                 >
               </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#"
-                  >Roadmap</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Pre-Sale</a
-                >
+                  >Roadmap
+                </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#"
@@ -65,8 +65,8 @@
             </ul>
           </div>
 
-          <button class="btn btn-outline-success" type="submit">
-            Contact Us
+          <button class="btn bts btn-outline-success" type="submit">
+            Connect Wallet
             <span>
               <img src="images/arrow.svg" alt="" />
             </span>
@@ -115,57 +115,97 @@
                     </div>
                   </div>
                   <p>Until token sale ends</p>
-                  <p class="text-success">USDT Raised: 0/530000000</p>
+                  <p class="">USDT Raised: 0/530000000</p>
                   <p>Your Purchased TOKEN = 0</p>
 
                   <p class="pra_Line">1 TOKEN = $0.0005</p>
 
                   <div class="btn-group mb-3" role="group">
-                    <button type="button" width="100%" class="btn btn-green">
+                    <button
+                      type="button"
+                      width="100%"
+                      class="btn btn-green"
+                      id="ethButton"
+                      onclick="setActive(this)"
+                    >
                       <span>
-                        <img src="images/Ethereum-ETH-icon.png" alt="" />
+                        <img
+                          src="images/Ethereum-ETH-icon.png"
+                          alt="Ethereum Icon"
+                        />
                       </span>
                       ETH
                     </button>
-                    <button type="button" width="100%" class="btn btn-dark">
+                    <button
+                      type="button"
+                      width="100%"
+                      class="btn btn-dark"
+                      id="usdtButton"
+                      onclick="setActive(this)"
+                    >
                       <span>
-                        <img src="images/Tether-USDT-icon.png" alt="" />
+                        <img
+                          src="images/Tether-USDT-icon.png"
+                          alt="Tether Icon"
+                        />
                       </span>
                       USDT
                     </button>
                   </div>
-                  <p class="pra_Line">ETH Balance: 0 ETH</p>
+                  <p class="pra_Line" id="balanceInfo">ETH Balance: 0 ETH</p>
 
                   <div class="mb-3 text-start">
                     <div class="row">
                       <div class="col-6">
-                        <label for="payWithEth" class="form-label"
-                          >Pay with ETH</label
-                        >
-                        <input
-                          type="number"
-                          class="form-control bg-dark text-white border-success"
-                          id="payWithEth"
-                          placeholder="0"
-                        />
+                        <div class="d-flex justify-content-between">
+                          <label
+                            for="payWithEth"
+                            class="form-label"
+                            id="payLabel"
+                            >Pay with ETH</label
+                          >
+                          <article>MAX</article>
+                        </div>
+                        <div class="input-with-icon">
+                          <!-- حقل الإدخال -->
+                          <input
+                            type="text"
+                            class="form-control bg-dark text-white border-success"
+                            id="payWithEth"
+                          />
+                          <!-- الصورة -->
+                          <img
+                            src="images/Ethereum-ETH-icon.png"
+                            alt="ETH Icon"
+                          />
+                        </div>
                       </div>
                       <div class="col-6">
-                        <label for="receiveToken" class="form-label"
+                        <label
+                          for="receiveToken"
+                          class="form-label"
+                          id="receiveLabel"
                           >Receive TOKEN</label
                         >
-                        <input
-                          type="number"
-                          class="form-control bg-dark text-white border-success"
-                          id="receiveToken"
-                          placeholder="0"
-                        />
+                        <div class="input-with-icon">
+                          <!-- حقل الإدخال -->
+                          <input
+                            type="text"
+                            class="form-control bg-dark text-white border-success"
+                            id="receiveToken"
+                          />
+                          <!-- الصورة -->
+                          <img src="images/iconelogo.avif" alt="USDT Icon" />
+                        </div>
                       </div>
                     </div>
+                    <hr class="my-5" />
                   </div>
                   <article>
                     0 ETH is reserved for gas fees. The actual amount used will
                     depend on the network activity at the time.
                   </article>
+                  <p class="status">PRESALE STATUS</p>
 
                   <div class="progress text-center mb-3" style="height: 20px">
                     <div
@@ -180,6 +220,9 @@
                   </div>
 
                   <button class="btn btn-success btn-lg w-100">
+                    <span>
+                      <img src="images/iconelogo.avif" alt="" />
+                    </span>
                     Connect Wallet
                   </button>
                 </div>
@@ -196,87 +239,48 @@
     <section class="discover mt-150">
       <div class="container">
         <div class="row">
-          <div class="col-lg-9 col-xl-9">
-            <h2>Discover Our full range of services</h2>
-            <p>
-              LandFree offers adiverse array of expertly crafted services ,
-              seamlessly merging creativity and technology to deliver that
-              exceed expectations.
-            </p>
+          <div class="col-lg-9 col-xl-9 mb-5">
+            <h2>Why Join the $EVLK Pre-Sale?</h2>
           </div>
           <div class="col-xl-4 col-lg-4">
             <div class="card">
               <div class="top-card d-flex">
-                <span> ???</span>
-                <h3>Design Services</h3>
+                <h3>Exclusive NFTs</h3>
               </div>
               <p>
-                At LandFree ,our design team is passionate about creating
-                stunning
+                As an early supporter, you’ll gain access to limited-edition
+                Evil Kermit NFTs. These digital collectibles are designed to
+                celebrate the dark humor of Evil Kermit, with rare traits and
+                exclusive designs reserved for pre-sale participants. Own a
+                piece of the chaos and stand out in the community.
               </p>
-              <hr />
-              <div class="btns">
-                <button>UI & UX Design</button>
-                <button>Graphic Design</button>
-                <button>Branding</button>
-                <button>Web Design</button>
-                <button>Carousel Design</button>
-              </div>
-              <hr />
-              <button class="btn">
-                Book a Call
-                <img src="images/arrow.svg" alt="" />
-              </button>
             </div>
           </div>
           <div class="col-xl-4 col-lg-4">
             <div class="card">
               <div class="top-card d-flex">
-                <span> ???</span>
-                <h3>Design Services</h3>
+                <h3>Strengthened Liquidity</h3>
               </div>
               <p>
-                At LandFree ,our design team is passionate about creating
-                stunning
+                Your investment goes back into liquidity pools in USDT or ETH,
+                ensuring price stability and a sustainable market. By
+                participating in the pre-sale, you’re directly contributing to a
+                secure and thriving token ecosystem. Stability for the dark side
+                is stability for all.
               </p>
-              <hr />
-              <div class="btns">
-                <button>UI & UX Design</button>
-                <button>Graphic Design</button>
-                <button>Branding</button>
-                <button>Web Design</button>
-                <button>Carousel Design</button>
-              </div>
-              <hr />
-              <button class="btn">
-                Book a Call
-                <img src="images/arrow.svg" alt="" />
-              </button>
             </div>
           </div>
           <div class="col-xl-4 col-lg-4">
             <div class="card">
               <div class="top-card d-flex">
-                <span> ???</span>
-                <h3>Design Services</h3>
+                <h3>Community-Driven Roadmap</h3>
               </div>
               <p>
-                At LandFree ,our design team is passionate about creating
-                stunning
+                Be part of a movement where your voice matters. The pre-sale is
+                your gateway to shaping $EVLK’s future, from project expansions
+                to community-voted initiatives. Together, we’re building
+                something more than a meme—we’re building a revolution.
               </p>
-              <hr />
-              <div class="btns">
-                <button>UI & UX Design</button>
-                <button>Graphic Design</button>
-                <button>Branding</button>
-                <button>Web Design</button>
-                <button>Carousel Design</button>
-              </div>
-              <hr />
-              <button class="btn">
-                Book a Call
-                <img src="images/arrow.svg" alt="" />
-              </button>
             </div>
           </div>
         </div>
@@ -284,70 +288,67 @@
     </section>
     <!-- features Sections  -->
     <section class="discover mt-150 feature">
-      <div class="container">
-        <div class="row">
+      <div class="container-fluid">
+        <div class="row justify-content-between">
           <div class="col-lg-6 col-xl-6">
-            <span>OUR FEATURES</span>
-            <h2>What Sets LandFree Apart</h2>
+            <h2>TOKENOMICS</h2>
             <p>
-              Explore the exceptional features that make landfree your ultimate
-              web development choice
+              A transparent and balanced allocation designed to support
+              EvilKermit's growth and stability
             </p>
           </div>
           <div class="col-lg-6 col-xl-6">
             <div class="card">
-              <h4>BUY IN SALE:1$EVLK=$0.0027 ETH USDT</h4>
+              <h4>Burn Mechanism</h4>
             </div>
             <p>
-              Stand out in the digital landscap with a profissionally crafted
-              website that captivates and engages your audiencs effectively.
+              EvilKermit uses a 1% burn per transaction , which means every
+              trade slightly reduces the total supply , creating scarcity over
+              time . This mechanism rewards holders by gradually increasing the
+              value of remaining tokens , incentivizing long-term holding and
+              engagement with the community .
             </p>
           </div>
+
           <div class="col-lg-6 col-xl-6">
             <div class="row">
               <div class="col-lg-6">
                 <div class="card-feature card">
                   <div class="d-flex">
-                    <span>??</span>
-                    <p>responsive and Mobile - First Design</p>
+                    <span
+                      style="
+                        --tw-bg-opacity: 1;
+                        background-color: rgb(34 197 94 / var(--tw-bg-opacity));
+                        border-radius: 0.125rem;
+                        width: 1rem;
+                        height: 1rem;
+                      "
+                    ></span>
+                    <p>30% Airdrop</p>
                   </div>
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="card-feature card">
                   <div class="d-flex">
-                    <span>??</span>
-                    <p>responsive and Mobile - First Design</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="card-feature card">
-                  <div class="d-flex">
-                    <span>??</span>
-                    <p>responsive and Mobile - First Design</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="card-feature card">
-                  <div class="d-flex">
-                    <span>??</span>
-                    <p>responsive and Mobile - First Design</p>
+                    <span
+                      style="
+                        --tw-bg-opacity: 1;
+                        background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+                        border-radius: 0.125rem;
+                        width: 1rem;
+                        height: 1rem;
+                      "
+                    ></span>
+                    <p>70% Stacking Rewards</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row justify-content-around">
-            <div class="col-lg-10">
-              <h5>We Promise you . your every single penny will worth</h5>
-            </div>
-            <div class="col-lg-2">
-              <button>
-                Contact Us
-                <img src="images/arrow.svg" alt="" />
-              </button>
+          <div class="col-lg-6">
+            <div class="item">
+              <img src="images/handchart.fef8e0ff6fae7aafd179.png" alt="" />
             </div>
           </div>
         </div>
@@ -356,59 +357,64 @@
     <!-- different sections -->
     <section class="different discover mt-150 feature">
       <div class="container">
-        <div class="row">
+        <div class="row align-items-start">
           <div class="col-lg-6 col-xl-6">
-            <div class="card">
-              <img src="images/bgcellsdown.svg" alt="" />
+            <div class="card mb-5">
+              <h4>Roadmap</h4>
             </div>
+            <h3>Q4 2024 – Q1 2025: Short-Term Goals</h3>
+            <p>
+              Presale Launch: Secure tokens at the best rates during the
+              exclusive $EVLK presale
+            </p>
+            <p>
+              Community Growth: Meme contests, viral campaigns, and interactive
+              events to energize the community.
+            </p>
+            <p>
+              Liquidity Establishment: Deploy and lock liquidity on
+              decentralized exchanges (DEXs).
+            </p>
+            <p>
+              Marketing Blitz: Partner with influencers and launch social
+              campaigns for maximum exposure.
+            </p>
           </div>
           <div class="col-lg-6 col-xl-6">
-            <h2>What Sets LandFree Apart</h2>
+            <h3>Q2 – Q4 2025: Mid-Term Goals</h3>
             <p>
-              Explore the exceptional features that make landfree your ultimate
-              web development choice
+              ● Exchange Launch: List $EVLK on major centralized and
+              decentralized exchanges.
             </p>
-            <button>
-              Contact Us
-              <img src="images/arrow.svg" alt="" />
-            </button>
-            <button class="viewBTN">
-              View Projects <img src="images/arrow.svg" alt="" />
-            </button>
-            <div class="row mt-2">
-              <div class="col-lg-6">
-                <div class="card-feature card">
-                  <div class="d-flex">
-                    <span>??</span>
-                    <p>responsive and Mobile - First Design</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="card-feature card">
-                  <div class="d-flex">
-                    <span>??</span>
-                    <p>responsive and Mobile - First Design</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="card-feature card">
-                  <div class="d-flex">
-                    <span>??</span>
-                    <p>responsive and Mobile - First Design</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="card-feature card">
-                  <div class="d-flex">
-                    <span>??</span>
-                    <p>responsive and Mobile - First Design</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <p>
+              ● Cross-Chain Expansion: Integrate with additional blockchains for
+              broader liquidity and usability.
+            </p>
+            <p>
+              ● Staking Platform Rollout: Launch staking with attractive rewards
+              for token holders.
+            </p>
+            <p>
+              ● Global Outreach: Ambassador programs to reach diverse, global
+              audiences.
+            </p>
+            <h3>2026 and Beyond: Long-Term Vision</h3>
+            <p>
+              ● Decentralized Governance: Transition to a DAO, empowering token
+              holders with voting rights.
+            </p>
+            <p>
+              ● Strategic Partnerships: Collaborate with projects and
+              influencers to enhance utility.
+            </p>
+            <p>
+              ● Meme Mainstreaming: Viral campaigns to position $EVLK as a
+              cultural phenomenon.
+            </p>
+            <p>
+              ● Ecosystem Evolution: Explore NFTs, gamified rewards, and
+              cross-industry collaborations.
+            </p>
           </div>
         </div>
       </div>
@@ -418,49 +424,103 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 col-xl-12">
-            <h2>What Sets LandFree Apart</h2>
+            <h2>COMMUNITY &amp; CONTACT US</h2>
             <p>
-              Explore the exceptional features that make landfree your ultimate
-              web development choice
+              Stay updated and join the conversation! Follow us on our official
+              channels:
             </p>
 
             <div class="row mt-2">
               <div class="col-lg-4">
                 <div class="card-feature card">
-                  <h4>higher Conversion Rates</h4>
-                  <p>responsive and Mobile - First Design</p>
+                  <h4>Contact US</h4>
+                  <p>
+                    <a
+                      href="https://t.me/EvilKermit"
+                      target="_blank"
+                      rel="noreferrer"
+                      ><img
+                        src="data:image/png;base64,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"
+                        alt=""
+                    /></a>
+                    <a href="@Discode" target="_blank" rel="noreferrer"
+                      ><img
+                        src="data:image/png;base64,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"
+                        alt=""
+                    /></a>
+
+                    <a
+                      href="https://www.x.com/EvilKermit"
+                      target="_blank"
+                      rel="noreferrer"
+                      ><img
+                        src="data:image/png;base64,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"
+                        alt=""
+                    /></a>
+                  </p>
                 </div>
               </div>
               <div class="col-lg-4">
                 <div class="card-feature card">
-                  <h4>higher Conversion Rates</h4>
-                  <p>responsive and Mobile - First Design</p>
+                  <div class="item">
+                    <div class="">
+                      <div class="">
+                        <h4>Contact Form</h4>
+
+                        <article>
+                          Have questions or need support? Reach out to us
+                          directly! Fill out the contact form below, and we’ll
+                          get back to you as soon as possible.
+                        </article>
+                        <br />
+
+                        <input
+                          type="text"
+                          class="form-control bg-dark text-white border-success"
+                          id="payWithEth"
+                        /><br />
+                        <input
+                          type="text"
+                          class="form-control bg-dark text-white border-success"
+                          id="payWithEth"
+                        />
+                        <br />
+                        <input
+                          type="text"
+                          class="form-control bg-dark text-white border-success"
+                          id="payWithEth"
+                        />
+                        <br />
+                        <button class="btn btn-success btn-lg w-100">
+                          Send Message
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="col-lg-4">
                 <div class="card-feature card">
-                  <h4>higher Conversion Rates</h4>
-                  <p>responsive and Mobile - First Design</p>
+                  <h4>Newsletter Signup</h4>
+                  <p>
+                    Never miss an update! Sign up for our newsletter to receive
+                    the latest news on EvilKermit, including roadmap milestones,
+                    presale alerts, and community events. Enter your email to
+                    join the EvilKermit community!
+                  </p>
+                  <input
+                    type="text"
+                    class="form-control bg-dark text-white border-success"
+                    id="payWithEth"
+                  /><br />
+                  <button class="btn btn-outline-success" type="submit">
+                    Subscribe
+                  </button>
                 </div>
               </div>
-              <div class="col-lg-4">
-                <div class="card-feature card">
-                  <h4>higher Conversion Rates</h4>
-                  <p>responsive and Mobile - First Design</p>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="card-feature card">
-                  <h4>higher Conversion Rates</h4>
-                  <p>responsive and Mobile - First Design</p>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="card-feature card">
-                  <h4>higher Conversion Rates</h4>
-                  <p>responsive and Mobile - First Design</p>
-                </div>
-              </div>
+              <div class="col-lg-4"></div>
+              <div class="col-lg-4"></div>
+              <div class="col-lg-4"></div>
             </div>
           </div>
         </div>
@@ -471,82 +531,196 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-xl-6">
-            <div class="card">
-              <img src="images/bgcellsdown.svg" alt="" />
+            <div class="card">PRESALE COUNTDOWN TIMER</div>
+            <div class="card-body">
+              <p>PRESALE STATUS</p>
+              <div class="progress text-center mb-3" style="height: 20px">
+                <div
+                  class="progress-bar bg-success text-center"
+                  role="progressbar"
+                  style="color: black; width: 10%"
+                  aria-valuenow="10"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+                <p
+                  style="
+                    color: black !important;
+                    position: relative;
+                    top: -38%;
+                    /* margin-bottom: 0px; */
+                  "
+                >
+                  100,000,000 / 1,000,000,000 EVLK
+                </p>
+              </div>
             </div>
           </div>
           <div class="col-lg-6 col-xl-6">
-            <h2>What Sets LandFree Apart</h2>
+            <h2>Presale Terms</h2>
+            <p>1. Max Purchase per Wallet: [Specify limit, e.g., 5,000 EVLK]</p>
+
             <p>
-              Explore the exceptional features that make landfree your ultimate
-              web development choice
+              2. Refund Policy: No refunds post-purchase (unless otherwise
+              noted)
             </p>
-            <button>
-              Contact Us
-              <img src="images/arrow.svg" alt="" />
-            </button>
-            <button class="viewBTN">
-              View Projects <img src="images/arrow.svg" alt="" />
-            </button>
-            <h5>Our Clients</h5>
-            <div class="row mt-2 bg-dark br-5">
-              <div class="col-lg-2">
-                <p>Stellier</p>
-              </div>
-              <div class="col-lg-2">
-                <p>Stellier</p>
-              </div>
-              <div class="col-lg-2">
-                <p>Stellier</p>
-              </div>
-              <div class="col-lg-2">
-                <p>Stellier</p>
-              </div>
-              <div class="col-lg-2">
-                <p>Stellier</p>
-              </div>
-              <div class="col-lg-2">
-                <p>Stellier</p>
-              </div>
-            </div>
+            <p>
+              3. Transaction Fees: Participants are responsible for standard
+              transaction fees.
+            </p>
           </div>
         </div>
         <div
           class="row footer mt-150 justify-content-evenly align-items-center"
         >
-          <div class="col-lg-2">
+          <div class="col-lg-2"></div>
+        </div>
+      </div>
+    </section>
+    <section class="discover mt-150">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 col-xl-9 mb-5">
+            <h2>HOW TO BUY</h2>
+          </div>
+          <div class="col-xl-4 col-lg-4">
             <div class="card">
-              <h2>2024</h2>
-              <p>your Founded</p>
+              <img
+                src="./images/Metamask.64728b59f45555d12cc8.png"
+                alt="Wallet Icon"
+              />
+              <div class="top-card d-flex">
+                <h3>1.Connect Your Wallet</h3>
+              </div>
+              <p>
+                Click "Connect Wallet" and select MetaMask or another compatible
+                wallet.
+              </p>
             </div>
           </div>
-          <div class="col-lg-2">
+          <div class="col-xl-4 col-lg-4">
             <div class="card">
-              <h2>500+</h2>
-              <p>your Founded</p>
+              <img
+                src="./images/Metamask.64728b59f45555d12cc8.png"
+                alt="Wallet Icon"
+              />
+              <div class="top-card d-flex">
+                <h3>1.Connect Your Wallet</h3>
+              </div>
+              <p>
+                Click "Connect Wallet" and select MetaMask or another compatible
+                wallet.
+              </p>
             </div>
           </div>
-          <div class="col-lg-2">
+          <div class="col-xl-4 col-lg-4">
             <div class="card">
-              <h2>60+</h2>
-              <p>your Founded</p>
-            </div>
-          </div>
-          <div class="col-lg-2">
-            <div class="card">
-              <h2>2024</h2>
-              <p>your Founded</p>
-            </div>
-          </div>
-          <div class="col-lg-2">
-            <div class="card">
-              <h2>2024</h2>
-              <p>your Founded</p>
+              <img
+                src="./images/Metamask.64728b59f45555d12cc8.png"
+                alt="Wallet Icon"
+              />
+              <div class="top-card d-flex">
+                <h3>1.Connect Your Wallet</h3>
+              </div>
+              <p>
+                Click "Connect Wallet" and select MetaMask or another compatible
+                wallet.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <footer class="footer mt-150">
+      <div class="overlay"></div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="card">
+              <h3>
+                <span>
+                  <img src="images/iconelogo.avif" alt="" />
+                </span>
+
+                EvilKermit
+              </h3>
+              <p>Embrace Your Inner Evil</p>
+              <p>Disclaimer</p>
+              <p>
+                EvilKermit is a community-driven, meme-inspired project and
+                should be considered a high-risk investment. Always do your own
+                research.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card">
+              <h4>Quick Links</h4>
+              <ul>
+                <li>Home</li>
+                <li>Tokenomics</li>
+                <li>Roadmap</li>
+                <li>Pre-Sale</li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card">
+              <h4>Community</h4>
+              <ul>
+                <p></p>
+                <li>
+                  <span>
+                    <a
+                      href="https://t.me/EvilKermit"
+                      target="_blank"
+                      rel="noreferrer"
+                      ><img
+                        src="data:image/png;base64,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"
+                        alt=""
+                    /></a>
+                  </span>
+                  @EvirkermitTG
+                </li>
+                <li>
+                  <span>
+                    <a href="@Discode" target="_blank" rel="noreferrer"
+                      ><img
+                        src="data:image/png;base64,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"
+                        alt=""
+                    /></a>
+                  </span>
+                  @EvirkermitDiscord
+                </li>
+                <li>
+                  <span>
+                    <a
+                      href="https://www.x.com/EvilKermit"
+                      target="_blank"
+                      rel="noreferrer"
+                      ><img
+                        src="data:image/png;base64,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"
+                        alt=""
+                    /></a>
+                  </span>
+                  @Evirkermitofficial
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card">
+              <h4>Contact Us</h4>
+              <p class="email">
+                For inquiries or support, please reach out via our Contact Form
+                or email us at
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- js files  -->
     <script src="js/main.js"></script>
     <script
